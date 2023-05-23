@@ -1,0 +1,261 @@
+body {
+  background: #0dff00;
+  font-family: Lato;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .75);
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  max-width: 40rem;
+  padding: 1.5rem;
+}
+
+.clndr-grid {
+  flex-wrap: wrap;
+}
+
+.cal1 {
+  margin: auto;
+  max-width: 40rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.picture {
+   margin-bottom: 1rem;
+  width:100%;
+  height:455px;
+}
+
+.January {
+        background: url(8-марта-2023/Вару.jpg) no-repeat center center;
+      background-size: cover;
+}
+
+.February {
+      background: url(8-марта-2023/Fel.png) no-repeat center center;
+      background-size: cover;
+}
+
+.March {
+      background: url(8-марта-2023/Пик.jpg) no-repeat center center;
+      background-size: cover;
+}
+
+.April {
+      background: url(8-марта-2023/Габриэль.png) no-repeat center center;
+      background-size: cover;
+}
+
+.May {
+      background: url(8-марта-2023/Пик-и-Ромео.png) no-repeat center center;
+      background-size: cover;
+}
+
+.June {
+    background: url(8-марта-2023/Феликс-и-Куромаку.png) no-repeat center center;
+      background-size: cover;
+}
+
+.July {
+    background: url(8-марта-2023/Kleo.png) no-repeat center center;
+      background-size: cover;
+}
+
+.August {
+      background: url(8-марта-2023/Вару-Данте-и-Пик.png) no-repeat center center;
+      background-size: cover;
+}
+
+.September {
+    background: url(8-марта-2023/Зонтик-и-Куромаку.png) no-repeat center center;
+      background-size: cover;
+}
+
+.October {
+      background: url(8-марта-2023/Riccardo.png) no-repeat center center;
+      background-size: cover;
+}
+
+.November {
+      background: url(8-марта-2023/Helen12.png) no-repeat center center;
+      background-size: cover;
+}
+
+.December {
+    background: url(8-марта-2023/Данте.png) no-repeat center center;
+    background-size: cover;
+}
+
+.clndr .clndr-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cal1 .clndr .clndr-controls .month {
+  float: left;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 33%;
+}
+
+.clndr-next-button:hover,
+.clndr-previous-button:hover,
+.clndr-next-year-button:hover,
+.clndr-previous-year-button:hover {
+  color: #72c6d8;
+}
+
+.clndr-next-button.inactive {
+  opacity: 0.5;
+}
+
+.clndr-next-button.inactive:hover {
+  background: none;
+  cursor: default;
+}
+
+.clndr-previous-button.inactive {
+  opacity: 0.5;
+}
+
+.clndr-previous-button.inactive:hover {
+  background: none;
+  cursor: default;
+}
+
+.days-of-the-week {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto .5rem;
+  justify-content: space-around;
+}
+
+.header-day {
+    font-weight: 700;
+}
+
+.days {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+}
+
+.day {
+  background: #fff;
+  width: 14.2857%;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.day:hover {
+  background: rgba(0, 142, 198, .5);
+color:#fff;}
+
+.cal1 .clndr .day.today,
+.cal1 .clndr .day.my-today {
+  background-color: #ddd;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.cal1 .clndr .day.today:hover,
+.cal1 .clndr .day.my-today:hover {
+  background: #72c6d8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+.cal1 .clndr .day.today.event,
+.cal1 .clndr .day.my-today.event {
+  color: rgba(0, 142, 198, .75);
+}
+
+.cal1 .clndr .day.event,
+.cal1 .clndr .day.my-event {
+  color: rgba(0, 142, 198, 1);
+}
+
+.cal1 .clndr .day.event:hover,
+.cal1 .clndr .day.my-event:hover {
+  background: rgba(0, 142, 198, 1);
+  color: #fff;
+  font-weight: 700;
+}
+
+.cal1 .clndr .day.inactive,
+.cal1 .clndr .day.my-inactive {
+  background: #ddd;
+}
+
+.cal1 .clndr .day .day-contents {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.cal1 .clndr .empty,
+.cal1 .clndr .adjacent-month,
+.cal1 .clndr .my-empty,
+.cal1 .clndr .my-adjacent-month {
+  height: inherit;
+  background: #ddd;
+}
+
+.cal1 .clndr .empty:hover,
+.cal1 .clndr .adjacent-month:hover,
+.cal1 .clndr .my-empty:hover,
+.cal1 .clndr .my-adjacent-month:hover {
+  background: rgba(0, 142, 198, .25);
+}
+
+.clndr-next-button,
+.clndr-previous-button,
+.clndr-next-year-button,
+.clndr-previous-year-button {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  margin: 0;
+}
+
+.clndr-next-button.inactive,
+.clndr-previous-button.inactive,
+.clndr-next-year-button.inactive,
+.clndr-previous-year-button.inactive {
+  opacity: 0.5;
+  cursor: default;
+}
+
+
+/* On a large screen
+  // Font size on the body with rem
+  // set on elements will increase in size*/
+
+@media only screen and (min-width: 64rem) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 28rem) {
+  .container {
+    margin:0;
+  }
+  
+  .picture {
+    height: 250px;
+  }
+  .day {
+    padding:8px 0;
+  }
+
+}
